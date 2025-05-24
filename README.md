@@ -23,6 +23,9 @@ cat file.txt | ./dumsum
 ./dumsum -- -weird.txt
 ```
 
+- Use `--` before filenames that begin with `-`, to prevent them being interpreted as options.
+- If no files are specified, `dumsum` reads from standard input.
+
 ---
 
 ## Options
@@ -47,14 +50,7 @@ make
 
 ---
 
-## 📝 Notes
-
-- Use `--` before filenames that begin with `-`, to prevent them being interpreted as options.
-- If no files are specified, `dumsum` reads from standard input.
-
----
-
-## 📄 License
+## License
 
 Apache License, Version 2.0
 
